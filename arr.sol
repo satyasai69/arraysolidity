@@ -13,7 +13,7 @@ contract array {
     }
     //remove select index
     function removeArr(uint index) public {
-        require(index < arr.length);
+        require(index < arr.length); // its check the index is aval or not 
         delete arr[index];
     }
     // remove last element in arr
