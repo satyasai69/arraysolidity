@@ -20,4 +20,7 @@ contract array {
     function removelast() public{
         arr.pop();
     }
+    function example() public pure{
+        uint[] memory a = new uint[](5);
+    }
 }
