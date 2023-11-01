@@ -7,4 +7,17 @@ contract array {
     function getArr() public view returns(uint[] memory){
       return arr;
     }
+    // add array value to arr
+    function addArr(uint i) public {
+        arr.push(i);
+    }
+    //remove select index
+    function removeArr(uint index) public {
+        require(index < arr.length);
+        delete arr[index];
+    }
+    // remove last element in arr
+    function removelast() public{
+        arr.pop();
+    }
 }
